@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "esModuleInterop": true,
+    "noImplicitAny": false,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "target": "es5",
+    "outDir": "dist",
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "lib": ["es2017", "es7", "es6", "dom"],
+    "allowSyntheticDefaultImports": true
+  },
+  "types": [
+    "chrome"
+  ],
+  "exclude": ["./node_modules", "**/*.spec.ts", "examples", "tests", "./.eslingrc.js", "./webpack.config.js"],
+  "include": ["./src", "./tests", "jest.config.js"]
+}
