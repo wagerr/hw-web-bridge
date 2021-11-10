@@ -52,12 +52,11 @@ export class MessageHandler {
                     throw new Error('The namespace is required.')
             }
         } catch (error) {
-            const { message, name, stack, code } = error
             this.sendMessage({
                 namespace,
                 action: getReplySignature(request),
                 success: false,
-                payload: { message, name, stack, code }
+                payload: { ...error }
             });
         }
     }

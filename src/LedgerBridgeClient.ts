@@ -104,13 +104,7 @@ export class LedgerBridgeClient {
                         )
                     } else {
                         console.error(LOG_PREFIX_CLIENT, payload);
-                        const error = new Error(payload.message)
-                        error.stack = payload.stask
-                        error.name = payload.name
-                        if ((error as any).code) {
-                            (error as any) = payload.code
-                        }
-                        reject(error)
+                        reject(payload)
                     }
                 }
             }
