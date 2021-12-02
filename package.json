@@ -1,6 +1,6 @@
 {
   "name": "@liquality/hw-web-bridge",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A web bridge for hardware wallets",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -44,8 +44,8 @@
     "webpack-cli": "^4.9.1"
   },
   "dependencies": {
-    "@ledgerhq/hw-app-btc": "^5.46.0",
-    "@ledgerhq/hw-app-eth": "^5.47.3",
+    "@ledgerhq/hw-app-btc": "^6.17.1",
+    "@ledgerhq/hw-app-eth": "^6.18.0",
     "@ledgerhq/hw-transport": "^6.11.2",
     "@ledgerhq/hw-transport-webhid": "^6.11.2",
     "@liquality/cryptoassets": "^1.4.1",
