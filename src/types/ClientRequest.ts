@@ -1,6 +1,6 @@
-import { ExecutionMode } from "./ExecutionMode";
-import { RequestNamespace } from "./RequestNamespace";
-import { MessagePayload } from "./MessagePayload";
+import { ExecutionMode } from './ExecutionMode'
+import { RequestNamespace } from './RequestNamespace'
+import { MessagePayload } from './MessagePayload'
 
 export interface ClientRequest {
     namespace: RequestNamespace;

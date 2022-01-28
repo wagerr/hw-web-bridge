@@ -1,6 +1,5 @@
-import { ChainId } from "@liquality/cryptoassets";
-import { ClientRequest } from "./";
-import { Network } from "./index";
+import { ChainId } from '@liquality/cryptoassets'
+import { ClientRequest, Network } from './'
 
 export interface ClientAppRequest extends ClientRequest {
     network: Network;

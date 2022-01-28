@@ -1,6 +1,6 @@
 {
   "name": "@liquality/hw-web-bridge",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A web bridge for hardware wallets",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -9,7 +9,8 @@
     "test:watch": "nodemon --ext ts --exec 'jasmine-ts \"src/**/*.spec.ts\"'",
     "type-check": "tsc --noEmit",
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.js",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "lint": "eslint --fix"
   },
   "repository": {
     "type": "git",
@@ -44,8 +45,8 @@
     "webpack-cli": "^4.9.1"
   },
   "dependencies": {
-    "@ledgerhq/hw-app-btc": "6.20.0",
-    "@ledgerhq/hw-app-eth": "6.20.0",
+    "@ledgerhq/hw-app-btc": "6.7.0",
+    "@ledgerhq/hw-app-eth": "6.23.1",
     "@ledgerhq/hw-transport": "6.20.0",
     "@ledgerhq/hw-transport-webhid": "6.20.0",
     "@liquality/cryptoassets": "1.7.1",

@@ -1,2 +1,3 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
-global.Buffer = global.Buffer || require('buffer').Buffer;
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+global.Buffer = global.Buffer || require('buffer').Buffer

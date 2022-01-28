@@ -1,4 +1,4 @@
-import { MessagePayload } from "./MessagePayload";
+import { MessagePayload } from './MessagePayload'
 
 export interface BridgeRequest {
     action: string;
