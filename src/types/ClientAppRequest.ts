@@ -1,4 +1,4 @@
-import { ChainId } from '@liquality/cryptoassets'
+import { ChainId } from '@wagerr-wdk/cryptoassets'
 import { ClientRequest, Network } from './'
 
 export interface ClientAppRequest extends ClientRequest {

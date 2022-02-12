@@ -2,12 +2,13 @@ import Transport from '@ledgerhq/hw-transport'
 import { fromHexToBufferPayload, fromBufferToHexPayload } from '.'
 import { ExecutionMode, MessagePayload } from '../types'
 import BTCApp from '@ledgerhq/hw-app-btc'
+import WGRApp from '@ledgerhq/hw-app-btc'
 import ETHApp from '@ledgerhq/hw-app-eth'
 
 export const executeCall = async (
   action: string,
   mode: ExecutionMode,
-  executor: Transport | ETHApp | BTCApp,
+  executor: Transport | ETHApp | BTCApp | WGRApp ,
   payload: MessagePayload): Promise<any> => {
   let result = null
   const parsedInput = fromHexToBufferPayload(payload)
